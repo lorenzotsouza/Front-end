@@ -1,0 +1,18 @@
+body {
+}
+#h1 {
+  text-indent: 15px;
+}
+#ul {
+  text-indent: -35px;
+  line-height: 10px;
+  margin: 0px;
+  padding: 0%;
+}
+#square {
+  background-image: url("../FRONT-END/BACKGROUND.png");
+  background-repeat: no-repeat;
+  background-position: inherit;
+  width: 906px;
+  height: 498px;
+}
