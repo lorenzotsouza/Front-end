@@ -10,7 +10,7 @@ body {
   padding: 0%;
 }
 #square {
-  background-image: url("../IMAGES/BACKGROUND.png");
+  background-image: url("IMAGES/BACKGROUND.png");
   background-repeat: no-repeat;
   background-position: inherit;
   width: 906px;
