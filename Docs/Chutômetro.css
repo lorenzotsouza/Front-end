@@ -1,0 +1,20 @@
+.container {
+  max-width: 300px;
+  margin: auto;
+  background-color: rgb(15, 19, 240);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: white;
+  margin-top: 0;
+  text-align: center;
+}
+input {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
