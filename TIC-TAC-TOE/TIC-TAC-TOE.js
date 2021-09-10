@@ -3,11 +3,11 @@ const fs = require('fs');
 const path = require('path');
 const app = express();
 
-app.set("views", path.join(__dirname, '/TIC-TAC-TOE'));
+app.set("views", path.join(__dirname , ""));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  res.render("GAME");
+  res.render('GAME');
 });
 
 app.listen(7000, () => {
