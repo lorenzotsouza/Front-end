@@ -24,7 +24,7 @@ header {
 
 section {
   padding: 20px;
-  background-image: url("../PROJECTS/IMAGES/PEOPLE.jpg");
+  background-image: url("../IMAGES/PEOPLE.jpg");
   background-size: cover;
   overflow: hidden;
 }
@@ -58,7 +58,7 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-image: url("../PROJECTS/IMAGES/ARROW.jpg");
+  background-image: url("../IMAGES/ARROW.jpg");
   background-repeat: no-repeat;
   background-position: calc(100% - 10px);
 }
