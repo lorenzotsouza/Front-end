@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const app = express();
 
-app.set("views", path.join(__dirname , ""));
+app.set("views", path.join(__dirname, ""));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {

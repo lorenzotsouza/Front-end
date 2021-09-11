@@ -15,13 +15,13 @@ function handleClick(event) {
 
     if (handleMove(position)) {
 
-    setTimeout(() => {
+        setTimeout(() => {
 
-       alert('End Game, Player ' + playerTime + ' Wins!');
-       
-   }, 10);
+            alert('End Game, Player ' + playerTime + ' Wins!');
 
-};
+        }, 10);
+
+    };
 
     updateSquare(position);
 
