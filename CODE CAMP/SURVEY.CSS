@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(54, 65, 168);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#heading {
+    max-width: 750px;
+    margin: 3rem auto;
+    padding: .10rem;
+}
+
+#main {
+    padding: 0% 20% 0% 20%;
+}
+
+#title {
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.1;
+    padding: .5rem;
+}
+
+#description {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: .2rem;
+}
+
+#survey-form {
+    background-color: rgb(25, 30, 78);
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+}
+
+#submit {
+    background: rgb(150, 163, 33);
+    color: rgb(255, 255, 255);
+    padding: .7rem;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: rgb(255, 0, 0);
+}
+
+.form {
+    width: 100%;
+    padding: .9rem;
+    border-radius: 10px;
+    font-size: 1.0rem;
+    border: none;
+}
