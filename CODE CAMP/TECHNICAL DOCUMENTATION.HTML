@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TECHNICAL DOCUMENTATION.CSS">
+    <title>Technical Documentation</title>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <header>CSS Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li>
+                <a class="nav-link" href="#Tutorials">Tutorials</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#First_steps">First steps</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Building_blocks">Building blocks</a>
+            </li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <code>
+                <p>Introduction to CSS (Cascading Style Sheets):
+                    CSS is used to styles web content, CSS basics walks through what you need to get started. We'll answer questions like: How do I make text red? How do I make content display at a certain location in the (webpage) layout? How do I decorate my webpage with background images and colors?
+                </p>
+                <p>Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style
+                    sheet language. CSS is what you use to selectively style HTML elements. For example, this CSS
+                    selects paragraph text, setting the color to red:
+                    p {
+                    color: red;
+                    }
+                </p>
+            </code>
+            </article>
+            </code>
+        </section>
+        <section class="main-section" id="Tutorials">
+            <header>Tutorials</header>
+            <article>
+                <code>
+                <p>This guide assumes you have the basics of HTML.</p>
+                <ul>
+                    <li>The very first thing we need to do is to tell the HTML document that we have some CSS rules we want it to use. There are three different ways to apply CSS to an HTML document that you'll commonly come across, however, for now, we will look at the most usual and useful way of doing so — linking CSS from the head of your document.
+
+                        Create a file in the same folder as your HTML document and save it as styles.css. The .css
+                        extension shows that this is a CSS file.
+                    </li>
+                    <li>Save your HTML and CSS files and reload the page in a web browser. The level one heading at the top of the document should now be red. If that happens, congratulations — you have successfully applied some CSS to an HTML document. If that doesn't happen, carefully check that you've typed everything correctly. You can continue to work in styles.css locally, or you can use our interactive editor below to continue with this tutorial. The interactive editor acts as if the CSS in the first panel is linked to the HTML document, just as we have with our document above.</li>
+                    <p>CSS is a fantastic styler for our pages, and we have covered the very basics here.</p>
+                </ul>
+            </code>
+            </article>
+
+        </section>
+        <section class="main-section" id="First_steps">
+            <header>First Steps</header>
+            <article>
+                <code>
+                <p>This guide assumes you have the basics of HTML and CSS.</p>
+                <ul>
+                    <li>Basic familiarity with using computers, and using the Web passively (i.e. just looking at it, consuming the content.)
+                    </li>
+                    <li>A basic work environment set up as detailed in Installing basic software, and an understanding of how to create and manage files, as detailed in Dealing with files.</li>
+                </ul>
+                <p>CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is, with a simple syntax example, and also covers some key terms about the language.
+                </p>
+                <p> As we have mentioned before, CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc.
+                    A document is usually a text file structured using a markup language — HTML is the most common
+                    markup language, but you may also come across other markup languages such as SVG or XML.
+                    Presenting a document to a user means converting it into a form usable by your audience. Browsers,
+                    like Firefox, Chrome, or Edge , are designed to present documents visually, for example, on a
+                    computer screen, projector or printer.
+                </p>
+            </code>
+            </article>
+        </section>
+        <section class="main-section" id="Building_blocks">
+            <header>Building Blocks</header>
+            <article>
+                <code>
+                <p>This guide assumes you have the following basic background:</p>
+                <ul>
+                    <li>Basic familiarity with HTML, as discussed in the Introduction to HTML module.</li>
+                    <li>An understanding of the basics of CSS, as discussed in the CSS first steps module.</li>
+                </ul>
+                <p>This module carries on where CSS first steps left off — now that you've gained familiarity with
+                    the language and its syntax, and got some basic experience using it, it's time to dive a bit
+                    deeper. This module looks at the cascade and inheritance, all the selector types we have
+                    available, units, sizing, styling backgrounds and borders, debugging, and lots more.
+                    The aim here is to provide you with a toolkit for writing competent CSS and help you understand
+                    all the essential theory, before moving on to more specific disciplines like text styling and
+                    CSS layout.</p>
+                <ul>
+                    <li>CSS stands for Cascading Style Sheets, and that first word cascading is incredibly important to understand — the way that the cascade behaves is key to understanding CSS.
+
+                        At some point, you will be working on a project and you will find that the CSS you thought
+                        should be applied to an element is not working. Usually, the problem is that you have created                        two rules which could potentially apply to the same element. The cascade, and the
+                        closely-related concept of specificity, are mechanisms that control which rule applies when
+                        there is such a conflict. Which rule is styling your element may not be the one you expect, so                        you need to understand how these mechanisms work.
+
+                        Also significant here is the concept of inheritance, which means that some CSS properties by
+                        default inherit values set on the current element's parent element, and some don't. This can
+                        also cause some behavior that you might not expect.
+
+                        Let's start by taking a quick look at the key things we are dealing with, then we'll look at
+                        each in turn and see how they interact with each other and your CSS. This can seem like a set of                        tricky concepts to understand. As you get more practice writing CSS, the way it works will      become more obvious to you.
+                    </li>
+                    <li>Specificity is how the browser decides which rule applies if multiple rules have different
+                        selectors, but could still apply to the same element. It is basically a measure of how specific                      a selector's selection will be:
+
+                        An element selector is less specific — it will select all elements of that type that appear on a                      page — so will get a lower score.
+                        A class selector is more specific — it will select only the elements on a page that have a
+                        specific class attribute value — so will get a higher score.
+                        Example time! Below we again have two rules that could apply to the h1. The below h1 ends up
+                        being colored red — the class selector gives its rule a higher specificity, and so it will be                     applied even though the rule with the element selector appears further down in the source order.
+                    </li>
+                </ul>
+            </code>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <code>
+                <p>Now that you know all the basics, you can get more knowledge from the website mentioned below.</p>
+                <ul>
+                    <li>The documentation in this page is taken from: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Mozilla</a>
+                    </li>
+                </ul>
+            </code>
+            </article>
+        </section>
+
+    </main>
+
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
