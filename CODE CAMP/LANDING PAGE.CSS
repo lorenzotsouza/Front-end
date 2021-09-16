@@ -45,9 +45,9 @@ a {
 }
 
 header {
-    position: flex;
-    top: 20;
-    padding: -15px 0px;
+    position: fixed;
+    top: 0;
+    padding: 5px 0px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -55,8 +55,8 @@ header {
 }
 
 #header-img {
-    max-width: 20%;
-    height: 20%;
+    max-width: 15%;
+    height: 15%;
 }
 
 @media (max-width: 600px) {
@@ -126,7 +126,7 @@ nav>ul {
     }
 }
 
-#hero {
+#gym {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,30 +136,30 @@ nav>ul {
     margin-top: 50px;
 }
 
-#hero>h2 {
+#gym>h2 {
     margin-bottom: 20px;
     word-wrap: break-word;
 }
 
-#hero input[type='email'] {
+#gym input[type='email'] {
     max-width: 275px;
     width: 100%;
     padding: 5px;
 }
 
-#hero input[type='submit'] {
+#gym input[type='submit'] {
     width: 50%;
     height: 30px;
     margin: 10px;
     background-color: rgba(251, 255, 32, 0.5);
 }
 
-#hero input[type='submit']:hover {
+#gym input[type='submit']:hover {
     background-color: rgba(255, 0, 0, 0.5);
 }
 
 @media (max-width: 650px) {
-    #hero {
+    #gym {
         margin-top: 120px;
     }
 }
@@ -174,7 +174,7 @@ nav>ul {
     justify-content: center;
     height: 125px;
     width: 20vw;
-    color: rgb(255, 217, 0);
+    color: rgb(0, 0, 0);
 }
 
 @media (max-width: 550px) {
@@ -207,13 +207,13 @@ nav>ul {
     }
 }
 
-#how-it-works {
+#i-want-to-begin {
     margin-top: 50px;
     display: flex;
     justify-content: center;
 }
 
-#how-it-works>iframe {
+#i-want-to-begin>iframe {
     max-width: 560px;
     width: 100%;
 }
